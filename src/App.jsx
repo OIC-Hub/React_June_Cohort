@@ -3,6 +3,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"
 import EdenFiImg from "./assets/edenfi.jpg"
 import Counter from "./components/Counter";
+import Toggle from "./components/Toggle";
+import Greetings from "./components/Greetings";
+import Timer from "./components/Timer";
 
 function App() {
 
@@ -26,8 +29,11 @@ function App() {
         <p>Software Engineer</p>
       </Data> */}
 
-      <Counter/>
-      <Footer />
+      {/* <Counter/> */}
+      {/* <Toggle/> */}
+      {/* <Greetings/> */}
+      <Timer/>
+      {/* <Footer /> */}
     </>
   )
 }

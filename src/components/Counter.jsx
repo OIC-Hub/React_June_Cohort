@@ -1,8 +1,12 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 function Counter(){
     const initialValue = 0;
     const[value, setValue] = useState(initialValue);
+
+    useEffect(() => {
+        document.title = "counts is " + value
+    }, [value])
 
     return(
         <>
