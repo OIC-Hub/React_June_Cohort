@@ -1,0 +1,21 @@
+{/* <img src={EdenFiImg} alt="" width={"200px"} /> */}
+      {/* <Data name= "Ade" role="software engineer"/> */}
+      {/* <Data> */}
+            {/* <Data name= "Ade" role="software engineer" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s"/> */}
+      {/* </Data> */}
+      {/* <Data>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s" alt="" width={"50px"} />
+        <p>Ade</p>
+        <p>Software Engineer</p>
+      </Data> */}
+      {/* <Data>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s" alt="" width={"50px"} />
+        <p>Ade</p>
+        <p>Software Engineer</p>
+      </Data> */}
+
+      {/* <Counter/> */}
+      {/* <Toggle/> */}
+      {/* <Greetings/> */}
+      {/* <Timer/> */}
+      {/* <Footer /> */}

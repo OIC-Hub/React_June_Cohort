@@ -1,39 +1,27 @@
-import Data from "./components/Data";
+// import Data from "./components/Data";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"
-import EdenFiImg from "./assets/edenfi.jpg"
-import Counter from "./components/Counter";
-import Toggle from "./components/Toggle";
-import Greetings from "./components/Greetings";
-import Timer from "./components/Timer";
+import { About } from "./pages/About";
+import { Home } from "./pages/Home";
+import { Notfound } from "./pages/NotFound";
+// import EdenFiImg from "./assets/edenfi.jpg"
+// import Counter from "./components/Counter";
+// import Toggle from "./components/Toggle";
+// import Greetings from "./components/Greetings";
+// import Timer from "./components/Timer";
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <h1 className="text-[200px]">Hello world</h1>
-      <img src={EdenFiImg} alt="" width={"200px"} />
-      {/* <Data name= "Ade" role="software engineer"/> */}
-      <Data>
-            {/* <Data name= "Ade" role="software engineer" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s"/> */}
-      </Data>
-      {/* <Data>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s" alt="" width={"50px"} />
-        <p>Ade</p>
-        <p>Software Engineer</p>
-      </Data> */}
-      {/* <Data>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzbKM6X1OUanGplE4k-Lf21WaMgISPXCwJFQ&s" alt="" width={"50px"} />
-        <p>Ade</p>
-        <p>Software Engineer</p>
-      </Data> */}
-
-      {/* <Counter/> */}
-      {/* <Toggle/> */}
-      {/* <Greetings/> */}
-      <Timer/>
-      {/* <Footer /> */}
+      
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>} />
+          <Route path="*" element={<Notfound/>}/>
+      </Routes>
+      
     </>
   )
 }
