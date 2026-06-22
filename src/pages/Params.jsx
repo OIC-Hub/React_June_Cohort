@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
+import axios from "axios"
 
 export const Params = () => {
 
@@ -12,9 +13,24 @@ export const Params = () => {
 const [user, setUsers] = useState([]);
 
 useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then(r => r.json())
-    .then(data => setUsers(data));
+    // fetch("https://jsonplaceholder.typicode.com/users")
+
+    // const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+    // .then(r => r.json())
+    // .then(data => setUsers(data));
+    // setUsers(response);
+
+    const fetchUsers = async() => {
+        try {
+            const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+            setUsers(response.data)
+            console.log(response.data)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    fetchUsers();
 }, []);
 
     const {id} = useParams();

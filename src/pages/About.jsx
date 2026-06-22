@@ -1,7 +1,7 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import { useNavigate } from "react-router-dom"
-
+import {FaBeer, FaHome} from "react-icons/fa"
 export const About = () => {
 
     const navigate = useNavigate();
@@ -10,7 +10,7 @@ export const About = () => {
         <>
         <Navbar/>
             <h1>
-                Welcome to HALAFOODJOR
+                Welcome to HALAFOODJOR <FaBeer/> <FaHome/>
             </h1>
 
             <button onClick={() => navigate(-1)}>Back home</button>
