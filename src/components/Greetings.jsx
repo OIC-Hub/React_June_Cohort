@@ -8,10 +8,14 @@ function Greetings(){
     useEffect(() => {
         if(Name !== ""){
             setGreeting("Hello " + Name)
+            localStorage.setItem("Names", Name)
+
         }else{
             setGreeting("");
         }
+
     }, [Name])
+        const GetName = localStorage.getItem("Names")
 
     return(
         <>
@@ -22,7 +26,7 @@ function Greetings(){
         value={Name}
         />
 
-        <p style={{fontSize: "30px", fontWeight: "bold"}}>{Greeting}</p>
+        <p style={{fontSize: "30px", fontWeight: "bold"}}>{GetName}</p>
         </>
     )
 
