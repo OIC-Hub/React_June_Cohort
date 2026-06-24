@@ -7,6 +7,9 @@ function Navbar(){
         <>
         <Link to={"/"}><img src={Logo} alt="" width={"70px"} /></Link>
     <Link to={"/"}>Home</Link>
+    {/* <Link to={"#second"}>Second</Link> */}
+    <a href="#second">Second</a>
+
         {/* <Link to={"/about"}>About</Link> */}
 
         <NavLink to={"/about"} 
@@ -16,6 +19,8 @@ function Navbar(){
         })}>
             About
         </NavLink>
+
+
         </>
     )
 }
